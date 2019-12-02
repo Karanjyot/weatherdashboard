@@ -9,6 +9,7 @@
     background-color: #1494de!important; 
     color:white;
     margin-top:20px;
+    
 }
 
 .navbar {
@@ -17,9 +18,7 @@
     color: white;
     
 }
-.navbar-brand {
-    margin-left:650px;
-}
+
 
 #start {
     margin-top:20px;
@@ -33,4 +32,22 @@
 #info {
     font-weight: 600;
     text-align: center;
+}
+
+body {
+
+    overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+
+.card {
+
+    background-color: #1494de!important; 
+    color: white;
+
+    margin-top:20px;
+    
+}
+
 }
