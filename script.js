@@ -14,6 +14,7 @@ var queryURL2 = "https://api.openweathermap.org/data/2.5/forecast?q=toronto&appi
 
 
 $("#button").click(function(){
+    event.preventDefault();
 
     city = $("#search").val();
     console.log(city)
