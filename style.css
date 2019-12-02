@@ -34,10 +34,7 @@
     text-align: center;
 }
 
-body {
 
-    overflow: hidden;
-}
 
 @media screen and (max-width: 480px) {
 
@@ -45,8 +42,9 @@ body {
 
     background-color: #1494de!important; 
     color: white;
-
     margin-top:20px;
+
+
     
 }
 
