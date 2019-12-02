@@ -1,0 +1,36 @@
+.card {
+
+    background-color: #1494de!important; 
+    color: white;
+    
+}
+
+.jumbotron {
+    background-color: #1494de!important; 
+    color:white;
+    margin-top:20px;
+}
+
+.navbar {
+
+    background-color: black;
+    color: white;
+    
+}
+.navbar-brand {
+    margin-left:650px;
+}
+
+#start {
+    margin-top:20px;
+}
+
+#city {
+    font-weight: 600;
+    text-align: center;
+}
+
+#info {
+    font-weight: 600;
+    text-align: center;
+}
