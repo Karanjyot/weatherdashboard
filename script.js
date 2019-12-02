@@ -10,7 +10,7 @@ document.getElementById("weather").style.display = "none";
 document.getElementById("start").style.display = "block";
 
 
-var queryURL2 = "https://api.openweathermap.org/data/2.5/forecast?q=toronto&appid=" + apiKey;
+
 
 
 $("#button").click(function(){
@@ -19,6 +19,7 @@ $("#button").click(function(){
     city = $("#search").val();
     console.log(city)
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey; 
+    var queryURL2 = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + apiKey;
 
 
 
@@ -28,7 +29,7 @@ $("#button").click(function(){
        }).then(function(response) {
            console.log(response)
 
-           var tempconv = Math.round(300 - response.main.temp)
+           var tempconv = Math.round(response.main.temp - 273.15)
            
        
             var date = new Date(response.dt*1000);
@@ -51,11 +52,11 @@ $("#button").click(function(){
        }).then(function(response) {
            console.log(response)
 
-           var tempconv1 = Math.round(300 - response.list[0].main.temp)
-           var tempconv2 = Math.round(300 - response.list[8].main.temp)
-           var tempconv3 = Math.round(300 - response.list[16].main.temp)
-           var tempconv4 = Math.round(300 - response.list[24].main.temp)
-           var tempconv5 = Math.round(300 - response.list[32].main.temp)
+           var tempconv1 = Math.round(response.list[0].main.temp - 273.15)
+           var tempconv2 = Math.round(response.list[8].main.temp - 273.15)
+           var tempconv3 = Math.round(response.list[16].main.temp - 273.15)
+           var tempconv4 = Math.round(response.list[24].main.temp - 273.15) 
+           var tempconv5 = Math.round(response.list[32].main.temp - 273.15)
 
 
     
