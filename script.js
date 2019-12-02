@@ -4,12 +4,7 @@ var city;
 
 var arr = []
 
- get();
- function get() {
-    localStorage.getItem("city")
- };
 
-$("#list").html(arr);
 
 document.getElementById("weather").style.display = "none";
 document.getElementById("start").style.display = "block";
@@ -36,6 +31,8 @@ $("#button").click(function(){
            
        
             var date = new Date(response.dt*1000);
+            var hours = date.getHours();
+
            $("#city").html(response.name);
            $("#date").html(date);
            $("#temp").html("Temperature: " + tempconv);
